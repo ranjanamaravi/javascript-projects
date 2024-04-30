@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music-player.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+
+    <!--Music Player-->
+    <div class="container">
+        <nav>
+            <div><i class="fa-solid fa-chevron-left"></i></div>
+            <div><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <img src="media/468-thumbnail.png" class='song-img' height="200" width="200">
+        <h2>Besabriyaan</h2>
+        <p>Amaal Malik & Armaan Malik</p>
+        <audio id="song">
+            <source src="media/01 Besabriyaan (MS Dhoni) Armaan Malik190Kbps - Copy.mp3">
+        </audio>
+
+        <input type="range" value='0' id="progress">
+        <div class="controls">
+            <div><i class="fa-solid fa-angles-left"></i></div>
+            <div id="play-pause"><i class="fa-solid fa-play" id="ctrl-icon"></i></div>
+            <div><i class="fa-solid fa-angles-right"></i></div>
+        </div>
+
+    </div>
+
+    <script src="music-player.js"></script>
+
+
+
+</body>
+
+</html>
